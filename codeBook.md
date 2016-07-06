@@ -74,4 +74,27 @@ This dataset is distributed AS-IS and no responsibility implied or explicit can 
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
-#Codebook for "run_analysis.r" variables
+#Codebook for variables created by the "run_analysis.r" script during processing:
+The table "testTrain" is created by combining subject, activity, test, and train data into one table. 
+The first two columns, containing subject and activity data, are renamed "subject" and "activity".
+
+The activity data is recoded so that:
+  1 = walking
+  2 = walking_upstairs
+  3 = walking_downstairs
+  4 = sitting
+  5 = standing
+  6 = laying
+
+The table "meanstd" is created by selecting from "testTrain" only those columns containing mean and standard deveiation data. 
+The following replacements are made within the variable names to make them easier to read. Descriptions of the original variable names can be found in an earlier section of this codebook.
+  "tBody" replaced with "TimeBody"
+  "tGravity" replaced with "TimeGravity"
+  "fBody" replaced with "FreqBody"
+  "fGravity" replaced with "FreqGravity"
+  "-mean()" replaced with "Mean"
+  "-std()" replaced with "Std"
+  "-mean()" replaced with "Mean"
+  "-std()" replaced with "Std"
+
+The file "tidy.txt" is then created in the working directory with the same structure as the "meanstd" table.
