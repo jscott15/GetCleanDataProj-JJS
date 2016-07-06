@@ -1,6 +1,5 @@
-GetCleanDataProj-JJS
-Final project for Coursera Getting and Cleaning Data course
-You should include a README.md in the repo describing how the script works and the code book describing the variables.
+"Final project for Coursera Getting and Cleaning Data course
+You should include a README.md in the repo describing how the script works and the code book describing the variables."
 
 "run_analysis.r" is an R script that prepares a dataset from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip for further analysis.
 
